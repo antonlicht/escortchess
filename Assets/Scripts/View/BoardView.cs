@@ -109,6 +109,7 @@ public class BoardView : MonoBehaviour
         var go = Instantiate(FieldViewPrefab);
         go.transform.parent = transform;
         go.transform.localScale = Vector3.one;
+        go.hideFlags = HideFlags.DontSave;
         return go;
     }
 }
